@@ -178,6 +178,11 @@
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 .meal-img {
   width: 100%;
@@ -230,4 +235,24 @@
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+.list-icon {
+  height: 3rem;
+  width: 3rem;
+  color: #e67e22;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
