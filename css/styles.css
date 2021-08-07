@@ -1,141 +1,3 @@
-/*
-TYPOGRAPHY SYSTEM
-
-  Font sizes (px):
-    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-  Font weights:
-    Default: 400
-    Medium: 500
-    Semi-bold: 600
-    Bold: 700
-
-  Line heights:
-    Default: 1
-    Small: 1.05
-    Paragraph default: 1.6
-
-COLORS
-
-- Primary: #e67e22
-- Tints: #fdf2e9
-- Shades: #cf711f
-- Accents:
-- Greys: #555, #333
-
-SHADOWS
-
-BORDER RADIUS
-  Default: 10px
-
-WHITESPACE
-
-  Spacing system:
-    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  padding: 0;
-  margin: 0;
-}
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-body {
-  font-family: 'Rubik', sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/* ---- GENERAL REUSABLE COMPONENTS ---- */
-
-.u-mr-sm {
-  margin-right: 1.6rem !important;
-}
-
-.container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-.grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.heading-primary,
-.heading-secondary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
-}
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
-}
-.subheading {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #cf711f;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 10px;
-  transition: all 0.3s;
-}
-.btn--full:link,
-.btn--full:visited {
-  background: #e67e22;
-  color: #fff;
-}
-.btn--full:hover,
-.btn--full:active {
-  background: #cf711f;
-}
-.btn--outline:link,
-.btn--outline:visited {
-  background: #ffff;
-  color: #555;
-}
-.btn--outline:hover,
-.btn--outline:active {
-  background: #fdf2e9;
-  /* border: 3px solid #fff; */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
 /* ---- HEADER ---- */
 
 .header {
@@ -233,4 +95,52 @@ body {
 }
 .delivered-text span {
   color: #cf711f;
+}
+
+/* ---- HOW IT WORKS SECTION ---- */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-img-box::before {
+  width: 60%;
+  /* This padding is in relation with the parent element */
+  padding-bottom: 60%;
+  background: #fdf2e9;
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background: #fae5d3;
+  z-index: -1;
+}
+.step-img {
+  width: 35%;
 }
