@@ -25,13 +25,15 @@ COLORS
 - Primary: #e67e22
 - Tints: #fdf2e9, #fae5d3
 - Shades: #cf711f
-- Accents:
+- Accents: #51cf66, #94d82d, #ffd43b
 - Greys: #555, #333, #888
 
 SHADOWS
 
 BORDER RADIUS
   Default: 10px
+  12px
+  100px
 
 WHITESPACE
 
@@ -56,6 +58,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+strong {
+  font-weight: 500;
 }
 
 /* ---- GENERAL REUSABLE COMPONENTS ---- */
