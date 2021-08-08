@@ -49,6 +49,7 @@
 @media (max-width: 59em) {
   html {
     font-size: 50%;
+    scroll-padding-top: 3.2rem;
   }
   .hero {
     grid-template-columns: 1fr;
@@ -97,7 +98,7 @@
     z-index: 10;
   }
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 0.97);
     position: absolute;
     top: 0;
     left: 0;
