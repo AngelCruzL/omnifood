@@ -89,6 +89,9 @@ strong {
   row-gap: 9.6rem;
   column-gap: 6.4rem;
 }
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
