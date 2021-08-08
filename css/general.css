@@ -63,6 +63,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 strong {
   font-weight: 500;
