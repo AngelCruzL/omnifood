@@ -24,7 +24,7 @@ COLORS
 
 - Primary: #e67e22
 - Tints: #fdf2e9, #fae5d3
-- Shades: #cf711f
+- Shades: #cf711f, #45260a
 - Accents: #51cf66, #94d82d, #ffd43b
 - Greys: #555, #333, #888, #6f6f6f
 
@@ -41,6 +41,11 @@ WHITESPACE
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 
 *,
 *:before,
@@ -149,6 +154,7 @@ strong {
   border-bottom: 1px solid transparent;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -158,6 +164,19 @@ strong {
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn--form {
+  background: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background: #fff;
+  color: #555;
 }
 .btn--full:link,
 .btn--full:visited {
